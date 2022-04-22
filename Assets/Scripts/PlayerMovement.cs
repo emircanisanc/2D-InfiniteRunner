@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     private float movementMultipiler = 1.01f;
     public bool canMove;
 
+    [SerializeField]
+    private float fallMultiplier = 1;
+
     void Start()
     {
         isGrounded = true;
@@ -72,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
                 nextJumpTime = Time.timeSinceLevelLoad + jumpFrequency;
             }
         }
+        
+        gravityEffect();
     }
 
     void FixedUpdate()
@@ -100,6 +105,14 @@ public class PlayerMovement : MonoBehaviour
         if(lastGrounded == false && isGrounded == true)
         {
             playerSoundController.playLandingSound();
+        }
+    }
+
+    private void gravityEffect()
+    {
+        if(rigid.velocity.y < 0)
+        {
+            rigid.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
     }
 

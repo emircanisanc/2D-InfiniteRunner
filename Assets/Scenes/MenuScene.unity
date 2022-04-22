@@ -403,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPause: {fileID: 0}
   gameOverPanel: {fileID: 0}
+  textTimer: {fileID: 0}
 --- !u!114 &454641594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,6 +1271,10 @@ PrefabInstance:
     - target: {fileID: 259686074130128227, guid: c67c53cb79129ff459cbab486218f0ae, type: 3}
       propertyPath: movementSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 259686074130128227, guid: c67c53cb79129ff459cbab486218f0ae, type: 3}
+      propertyPath: fallMultiplier
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 259686074130128227, guid: c67c53cb79129ff459cbab486218f0ae, type: 3}
       propertyPath: jumpMultiplier

@@ -2173,6 +2173,10 @@ PrefabInstance:
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 259686074130128227, guid: c67c53cb79129ff459cbab486218f0ae, type: 3}
+      propertyPath: fallMultiplier
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 259686074130128227, guid: c67c53cb79129ff459cbab486218f0ae, type: 3}
       propertyPath: jumpMultiplier
       value: 200
       objectReference: {fileID: 0}
